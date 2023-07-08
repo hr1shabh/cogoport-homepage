@@ -1,0 +1,105 @@
+.navbarContainer{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--layout-topbar);
+  padding: 8px 16px;
+  font-family: var(--font-family-heading);
+  font-weight: 500;
+  color: var(--font-color-heading);
+  background: #fbdc00;
+}
+.navbar{
+  background: #fbdc00;
+}
+.logoContainer{
+  cursor: pointer;
+  margin-left: 20px;
+}
+.headerContainer{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-top: 57px;
+    margin-top: -57px;
+    background: url(https://cdn.cogoport.io/cms-prod/cogo_public/vault/original/home-banner-background-1.webp);
+    background-color: var(--color-secondary);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+.subHeaderContainer{
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  height: 392px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+
+}
+.formHeaderContainer1{
+    display: flex;
+    flex-direction: column;
+}
+.numberContainer{
+  display: flex;
+  margin-top: 5px;
+}
+.numberContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.styles_controller_input_mobile{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 41px!important;
+  padding-right: 100px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: none!important;
+  border-radius: 20px!important;
+  border-top-left-radius: 0!important;
+  border-bottom-left-radius: 0!important;
+  outline: none!important;
+}
+
+.styles_get_started_btn{
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 90px;
+  padding: 2px 4px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #36bb22;
+  border: 1px solid #36bb22;
+  border-radius: 12px
+}
+.styles_desktop_image__WOlJu {
+  display: flex;
+  flex: 1 1;
+  width: 595px;
+  height: 397px;
+  margin-bottom: -39px;
+}
+.styles_mobile_image__nHLp0 {
+  display: none;
+  flex: 1 1;
+  width: 595px;
+  height: 400px;
+}
