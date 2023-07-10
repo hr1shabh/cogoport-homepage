@@ -6,16 +6,67 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: var(--layout-topbar);
+  height: 56px;
   padding: 8px 16px;
-  font-family: var(--font-family-heading);
+  font-family: "Ubuntu",sans-serif;
   font-weight: 500;
-  color: var(--font-color-heading);
+  color: #000;
   background: #fbdc00;
 }
+.CogoportLogo{
+  display: block;
+  flex-shrink: 0;
+  margin-left: 7%;
+  cursor: pointer;
+}
+
 .navbar{
   background: #fbdc00;
 }
+.navbarBtncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7%;
+  padding-top: 15px;
+  font-family: "Ubuntu",sans-serif;
+  list-style-type: none;
+}
+.navbarMiddleSection{
+  margin-right: auto;
+  margin-left: auto;
+}
+.loginBtnList{
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.SignupBtn{
+  color: #fff;
+  background-color: #ee3425;
+  border: 1px #ee3425;
+  min-width: 72px;
+  height: 36px;
+  padding: 4px 16px;
+  width: 100%;
+  border-radius: 8px!important;
+  outline: none;
+  transition: color .1s linear,background-color .1s linear,border-color .1s linear;
+  will-change: color,background-color,border-color;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family);
+  height: 28px;
+  justify-content: center;
+  line-height: 1.2;
+  font-size: 14px!important;
+  font-weight: 700!important;
+}
+
+
 h3{
   font-size: 28px;
   line-height: 1.2;
@@ -39,6 +90,15 @@ h3{
     padding-right: 15%;
     
 }
+.headerContainer1{
+  flex: 1 1;
+}
+
+.navbarMiddleSectionHeadings{
+  font-family: "Ubuntu",sans-serif;
+  font-weight: 500;
+  color: #000;
+}
 .subHeaderContainer{
   width: 1200px;
   display: flex;
@@ -53,17 +113,115 @@ h3{
     display: flex;
     flex-direction: column;
 }
-.numberContainer{
+.headernumber{
   display: flex;
   margin-top: 5px;
 }
-.numberContainer{
+.headernumberContainer{
   position: relative;
   display: flex;
   align-items: center;
   border-radius: 20px;
-  box-sizing: border-box;
 }
+.headernumberContainerLeft{
+  width: 110px;
+  min-width: 110px;
+  display: block;
+  position: relative;
+}
+.headernumberContainerLeft1{
+  height: 41px!important;
+  border: 1px solid #e0e0e0!important;
+  border-right: none!important;
+  border-radius: 20px!important;
+  border-top-right-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+  outline: none!important;
+}
+.headernumberContainerLeft1a{
+  border: none;
+  cursor: pointer;
+  flex-grow: 0;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px 12px;
+  width: 100%;
+  align-items: center;
+  background-color: e0e0e0;
+  display: flex;
+}
+.countryCode{
+  font-size: 16px;
+  padding-left: 26px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  display: block;
+  flex: 1 1;
+  font-family: "PT Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  outline: 0;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.dropdownicon{
+  padding-right: 16px;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+}
+.dropdownicon svg{
+  color: #2c3e50;
+  height: 12px;
+  width: 12px;
+}
+.whatsappiconstyles{
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.headerContainerInput{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 41px!important;
+  padding-right: 100px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: none!important;
+  border-radius: 20px!important;
+  border-top-left-radius: 0!important;
+  border-bottom-left-radius: 0!important;
+  outline: none!important;
+}
+.headerContainerBtn{
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 90px;
+  padding: 2px 4px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #36bb22;
+  border: 1px solid #36bb22;
+  border-radius: 12px;
+  font-family: "PT Sans",sans-serif;
+  font-size: 14px!important;
+  font-weight: 700!important;
+}
+
 .styles_controller_input_mobile{
   box-sizing: border-box;
   width: 100%;
@@ -686,4 +844,222 @@ span{
   height: 28px;
   justify-content: center;
   line-height: 1.2;
+}
+.newsletterContainer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  margin-top: 20px;
+  background-color: #fbdc00;
+}
+.newsletterContainerLeft{
+  width: 20%;
+  padding: 20px;
+  margin: 20px;
+}
+.newsletterheading{
+  margin: 0;
+}
+.newsletterpara{
+  font-size: 16px;
+}
+.emailContainer{
+  margin-top: 20px;
+}
+.emailContainerform{
+  display: flex;
+}
+.emailContainerInput{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+}
+.emailContainerBtn{
+  color: #fff;
+  background-color: #ee3425;
+  border: 1px solid#ee3425;
+  padding: 4px 16px;
+  min-width: 72px;
+  width: 120px!important;
+  height: 40px!important;
+  text-align: center;
+  text-decoration: none;
+  background: #ee3425;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  transition: color .1s linear,background-color .1s linear,border-color .1s linear;
+  will-change: color,background-color,border-color;
+  justify-content: center;
+  line-height: 1.2;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-family: "PT Sans",sans-serif;
+  font-size: 14px!important;
+  font-weight: 700!important;
+}
+.newsletterContainer::after{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  content: " ";
+  background-color: #fff;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+.serviceContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 0 50px 50px;
+  font-family: "PT Sans",sans-serif;
+  background: #fbdc00;
+}
+.serviceContainerRow{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.serviceContainerRowMainHeading{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+.serviceContainerRowText{
+  display: flex;
+  flex-direction: column;
+}
+.serviceContainerRowTextSection{
+  flex-direction: row;
+  align-items: center;
+  margin: 8px 0;
+}
+.serviceContainerRowTextspan{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.serviceContainerRowTexta{
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+.serviceContainerh4{
+  display: block;
+  font-size: 1rem;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: "Ubuntu",sans-serif;
+  color: #000;
+}
+.locationsContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 0;
+  background-color: #ebbe00;
+}
+.locationsContainerRow{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.locationsContainerRowText{
+  width: fit-content;
+  line-height: 2rem;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 30px;
+  background: #ebbe00;
+}
+.footerLeft{
+  display: flex;
+  align-items: center;
+}
+.footerRight{
+  display: flex;
+  align-items: center;
+}
+.footerSpan{
+  display: flex;
+  margin-left: 10px;
+  font-family: "Ubuntu",sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  list-style-type: none;
+}
+.footerUl{
+  display: flex;
+  margin-left: 10px;
+  font-family: "Ubuntu",sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.footerLi{
+  margin-right: 5px;
+  cursor: pointer;
+}
+.footerRightEn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.footerText{
+  font-size: 15px;
+  font-weight: 700;
+  color: #ee3425;
+  text-decoration: underline;
+}
+.footerRightSocialMedia{
+  padding: 8px 30px;
+}
+.footersvg{
+  margin-right: 4px;
+  color: #000;
+  cursor: pointer;
+}
+.footerRightEninside{
+  display: flex;
+  align-items: center;
 }
